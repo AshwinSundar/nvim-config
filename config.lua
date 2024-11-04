@@ -36,5 +36,17 @@ lvim.plugins = {
         -- virtual_text_column = 1,  -- virtual text start column, check Start virtual text at column section for more options    },
       }
     end,
+  },
+  {
+  'rmagatti/auto-session',
+  lazy = false,
+
+  ---enables autocomplete for opts
+  ---@module "auto-session"
+  ---@type AutoSession.Config
+  opts = {
+    suppressed_dirs = { '~/', '~/Projects', '~/Downloads', '/' },
+    -- log_level = 'debug',
   }
+}
 }
