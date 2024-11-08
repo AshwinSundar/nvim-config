@@ -5,11 +5,12 @@
 -- Discord: https://discord.com/invite/Xb9B4Ny
 
 vim.opt.wrap = true
-vim.opt.belloff = "all"
 lvim.colorscheme = "elflord"
+vim.opt.belloff = "all"
 
 vim.api.nvim_set_keymap('n', '<C-s>', ':w<CR>:echo "file saved"<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-p>', '<cmd>Telescope fd<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', 'J', '<Nop>', { noremap = true })
 
 lvim.plugins = {
   {
@@ -81,7 +82,7 @@ lvim.plugins = {
       local codewindow = require('codewindow')
       vim.keymap.set('n', '<leader>mm', codewindow.toggle_minimap, { desc = 'toggle minimap' })
       require('codewindow').setup {
-        auto_enable = true,
+        auto_enable = false,
         max_minimap_height = 25,
         minimap_width = 16,
         with_multiplier = 10,
