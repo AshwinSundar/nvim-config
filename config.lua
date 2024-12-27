@@ -11,6 +11,7 @@ vim.opt.belloff = "all"
 vim.api.nvim_set_keymap('n', '<C-s>', ':w<CR>:echo "file saved"<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-p>', '<cmd>Telescope fd<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', 'J', '<Nop>', { noremap = true })
+vim.o.sessionoptions="blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
 
 lvim.plugins = {
   {
@@ -92,5 +93,9 @@ lvim.plugins = {
   {
     'Exafunction/codeium.vim',
     event = 'BufEnter'
+  },
+  {
+    'neoclide/coc.nvim',
+    branch = 'release'
   }
 }
