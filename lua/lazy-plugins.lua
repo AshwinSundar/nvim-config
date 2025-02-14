@@ -23,33 +23,35 @@ require('lazy').setup({
   -- modular approach: using `require 'path/name'` will
   -- include a plugin definition from file lua/path/name.lua
 
-  require 'kickstart/plugins/gitsigns',
+  require 'kickstart/plugins/auto-session', -- Session Manager
 
-  require 'kickstart/plugins/which-key',
+  require 'kickstart/plugins/cmp', -- Code Completion tool
 
-  require 'kickstart/plugins/telescope',
-
-  require 'kickstart/plugins/lspconfig',
+  require 'kickstart/plugins/codewindow', -- Minimap
 
   require 'kickstart/plugins/conform',
 
-  require 'kickstart/plugins/cmp',
+  require 'kickstart/plugins/gitsigns',
 
-  require 'kickstart/plugins/tokyonight',
-
-  require 'kickstart/plugins/todo-comments',
+  require 'kickstart/plugins/lspconfig',
 
   require 'kickstart/plugins/mini',
 
-  require 'kickstart/plugins/treesitter',
+  require 'kickstart/plugins/peek', -- Markdown Previewer
+
+  require 'kickstart/plugins/telescope',
 
   require 'kickstart/plugins/telescope-file-browser',
 
-  require 'kickstart/plugins/codewindow',
+  require 'kickstart/plugins/todo-comments',
 
-  require 'kickstart/plugins/auto-session',
+  require 'kickstart/plugins/tokyonight', -- theme
 
-  require 'kickstart/plugins/peek',
+  require 'kickstart/plugins/treesitter',
+
+  require 'kickstart/plugins/trouble', -- LSP Display (not the actual LSP)
+
+  require 'kickstart/plugins/which-key', -- Keyboard Shortcut Helper
 
   -- The following comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
