@@ -50,7 +50,7 @@ require('lazy').setup({
 
   require 'kickstart/plugins/todo-comments',
 
-  require 'kickstart/plugins/tokyonight', -- theme
+  require 'kickstart/plugins/catppuccin-theme',
 
   require 'kickstart/plugins/treesitter',
 
