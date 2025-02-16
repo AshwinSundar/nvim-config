@@ -7,7 +7,7 @@ return {
       auto_enable = false,
       max_minimap_height = 100,
       minimap_width = 16,
-      with_multiplier = 10,
+      screen_bounds = 'background',
     }
 
     -- Optional: Add keybindings if you want them
