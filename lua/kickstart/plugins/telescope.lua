@@ -56,11 +56,17 @@ return {
         -- You can put your default mappings / updates / etc. in here
         --  All the info you're looking for is in `:help telescope.setup()`
         --
-        -- defaults = {
-        --   mappings = {
-        --     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
-        --   },
-        -- },
+        defaults = {
+          mappings = {
+            n = {
+              ['<leader>d'] = require('telescope.actions').delete_buffer,
+            },
+            i = {
+              ['<C-h>'] = 'which_key',
+              ['<leader>d'] = require('telescope.actions').delete_buffer,
+            },
+          },
+        },
         pickers = {
           find_files = {
             hidden = true,
