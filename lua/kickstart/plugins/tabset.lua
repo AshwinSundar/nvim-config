@@ -13,6 +13,9 @@ return {
         htmldjango = {
           tabwidth = 2,
         },
+        make = {
+          expandtab = false,
+        },
       },
     }
   end,
