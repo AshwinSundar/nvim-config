@@ -38,6 +38,8 @@ require('lazy').setup({
 
   require 'kickstart.plugins.lint',
 
+  require 'kickstart/plugins/markdown-preview',
+
   require 'kickstart/plugins/mini',
 
   require 'kickstart.plugins.neo-tree',
