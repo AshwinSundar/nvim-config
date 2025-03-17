@@ -16,6 +16,9 @@ return {
         make = {
           expandtab = false,
         },
+        typescriptreact = {
+          tabwidth = 2,
+        },
       },
     }
   end,
