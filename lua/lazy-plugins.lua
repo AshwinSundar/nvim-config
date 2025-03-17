@@ -24,6 +24,8 @@ require('lazy').setup({
 
   require 'kickstart/plugins/auto-session', -- Session Manager
 
+  require 'kickstart/plugins/catppuccin-theme',
+
   require 'kickstart/plugins/cmp', -- Code Completion tool
 
   require 'kickstart/plugins/codewindow', -- Minimap
@@ -36,7 +38,7 @@ require('lazy').setup({
 
   require 'kickstart/plugins/lspconfig',
 
-  require 'kickstart.plugins.lint',
+  require 'kickstart/plugins/lint',
 
   require 'kickstart/plugins/markdown-preview',
 
@@ -54,11 +56,11 @@ require('lazy').setup({
 
   require 'kickstart/plugins/todo-comments',
 
-  require 'kickstart/plugins/catppuccin-theme',
-
   require 'kickstart/plugins/treesitter',
 
   require 'kickstart/plugins/trouble', -- LSP Display (not the actual LSP)
+
+  require 'kickstart/plugins/typescript-tools',
 
   require 'kickstart/plugins/which-key', -- Keyboard Shortcut Helper
 
