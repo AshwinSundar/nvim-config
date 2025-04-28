@@ -16,8 +16,12 @@ return {
         make = {
           expandtab = false,
         },
-        typescriptreact = {
-          tabwidth = 2,
+        {
+          filetypes = { 'javascript', 'typescript', 'javascriptreact', 'typescriptreact', 'json', 'yaml' },
+          config = {
+            tabwidth = 2,
+            shiftwidth = 2,
+          },
         },
       },
     }
