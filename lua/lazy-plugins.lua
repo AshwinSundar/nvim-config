@@ -54,6 +54,8 @@ require('lazy').setup({
 
   require 'kickstart/plugins/telescope-file-browser',
 
+  require 'kickstart/plugins/terraform',
+
   require 'kickstart/plugins/todo-comments',
 
   require 'kickstart/plugins/treesitter',
