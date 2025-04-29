@@ -17,7 +17,7 @@ return {
           expandtab = false,
         },
         {
-          filetypes = { 'javascript', 'typescript', 'javascriptreact', 'typescriptreact', 'json', 'yaml' },
+          filetypes = { 'javascript', 'typescript', 'javascriptreact', 'typescriptreact', 'json', 'yaml', 'terraform' },
           config = {
             tabwidth = 2,
             shiftwidth = 2,
