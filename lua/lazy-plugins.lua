@@ -50,6 +50,8 @@ require('lazy').setup({
 
   require 'kickstart/plugins/peek', -- Markdown Previewer
 
+  require 'kickstart/plugins/sneak',
+
   require 'kickstart/plugins/tabset',
 
   require 'kickstart/plugins/telescope',

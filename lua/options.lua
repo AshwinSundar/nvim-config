@@ -64,4 +64,24 @@ vim.opt.scrolloff = 10
 -- Makes auto-session behave nicely
 vim.o.sessionoptions = 'blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions'
 
+vim.opt.foldmethod = 'indent'
+vim.opt.foldenable = true -- Enable folding
+
+-- Auto-save and auto-load folds
+local view_group = vim.api.nvim_create_augroup('AutoView', { clear = true })
+
+-- Save folds when leaving a buffer
+vim.api.nvim_create_autocmd({ 'BufWinLeave', 'BufLeave' }, {
+  group = view_group,
+  pattern = '*.*',
+  command = 'silent! mkview',
+})
+
+-- Load folds when entering a buffer
+vim.api.nvim_create_autocmd('BufWinEnter', {
+  group = view_group,
+  pattern = '*.*',
+  command = 'silent! loadview',
+})
+
 -- vim: ts=2 sts=2 sw=2 et
