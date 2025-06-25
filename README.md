@@ -1,8 +1,6 @@
 # nvim-config
 
-## Introduction
-
-My personal Neovim configuration. Originally forked from [nvim-lua/kickstart.nvim](https://github.com/dam9000/kickstart-modular.nvim).
+This is my personal Neovim configuration. Use at your own caution. Some features may not work correctly on your machine.
 
 ## Installation
 
