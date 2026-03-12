@@ -6,7 +6,7 @@ return {
     codewindow.setup {
       auto_enable = false,
       max_minimap_height = 100,
-      minimap_width = 16,
+      minimap_width = 20,
       screen_bounds = 'background',
     }
 
