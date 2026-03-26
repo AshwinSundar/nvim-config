@@ -19,6 +19,14 @@ require 'lazy-bootstrap'
 -- [[ Configure and install plugins ]]
 require 'lazy-plugins'
 
+-- [[ Zuban Python LSP (native vim.lsp.config, nvim 0.11+) ]]
+vim.lsp.config('zuban', {
+  cmd = { 'zuban', 'server' },
+  filetypes = { 'python' },
+  root_markers = { 'pyproject.toml', 'setup.py', 'setup.cfg', '.git' },
+})
+vim.lsp.enable('zuban')
+
 -- Set colorscheme
 vim.cmd.colorscheme 'catppuccin'
 
