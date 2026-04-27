@@ -84,4 +84,19 @@ vim.api.nvim_create_autocmd('BufWinEnter', {
   command = 'silent! loadview',
 })
 
+-- Flash statusline green and save on focus loss
+vim.api.nvim_create_autocmd('FocusLost', {
+  pattern = '*',
+  callback = function()
+    local orig = vim.api.nvim_get_hl(0, { name = 'MiniStatuslineFilename' })
+    vim.api.nvim_set_hl(0, 'MiniStatuslineFilename', { bg = '#40a02b', fg = '#ffffff', bold = true })
+    vim.cmd 'redrawstatus'
+    vim.cmd 'silent! wa'
+    vim.defer_fn(function()
+      vim.api.nvim_set_hl(0, 'MiniStatuslineFilename', orig)
+      vim.cmd 'redrawstatus'
+    end, 400)
+  end,
+})
+
 -- vim: ts=2 sts=2 sw=2 et
