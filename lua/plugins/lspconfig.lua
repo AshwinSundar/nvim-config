@@ -91,6 +91,7 @@ return {
           },
         },
         htmx = {},
+        djlsp = {},
       }
 
       local ensure_installed = vim.tbl_keys(servers or {})
