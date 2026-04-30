@@ -90,6 +90,7 @@ return {
             },
           },
         },
+        htmx = {},
       }
 
       local ensure_installed = vim.tbl_keys(servers or {})
