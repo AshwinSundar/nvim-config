@@ -2,11 +2,11 @@ return {
   'catppuccin/nvim',
   name = 'catppuccin',
   priority = 1000,
-  flavour = 'latte',
+  flavour = 'moccha',
   opts = {
     color_overrides = {
-      latte = {
-        base = '#fffff1',
+      mocha = {
+        base = '#010101',
         -- mantle = '#ffffaa',
         -- crust = '#fff000',
       },
